@@ -1,5 +1,12 @@
-
-
+<?php 
+/* 
+Muhammad Fathurrohman Haris
+203040015
+https://github.com/MFathurrohmanHaris/pw2021_203040015
+Pertemuan 4 - 25 Februari 2021
+Function ( User Defined Function )
+*/
+?>
 <?php 
     // Date 
     // untuk menampilkan tanggal dengan format tertentu
