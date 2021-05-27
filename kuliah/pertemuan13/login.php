@@ -6,9 +6,6 @@ https://github.com/MFathurrohmanHaris/pw2021_203040015
 Pertemuan 12 - 6 Mei 2021
 Login & Registrasi
 */
-?>
-
-<?php
 session_start();
 
 if (isset($_SESSION['login'])) {

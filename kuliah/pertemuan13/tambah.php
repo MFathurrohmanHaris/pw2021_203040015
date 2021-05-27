@@ -6,9 +6,6 @@ https://github.com/MFathurrohmanHaris/pw2021_203040015
 Pertemuan 13 - 16 Mei 2021
 Live Searching & Upload Gambar
 */
-?>
-
-<?php
 session_start();
 
 if (!isset($_SESSION['login'])) {
@@ -28,7 +25,6 @@ if (isset($_POST['tambah'])) {
     echo "data gagal ditambahkan!";
   }
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">

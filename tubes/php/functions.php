@@ -89,7 +89,7 @@ function tambah($data)
     return false;
   }
 
-  $query = "INSERT INTO t_buku VALUES ('', '$foto', '$judul', '$penulis', '$penerbit', '$tahunterbit', '$kategori')";
+  $query = "INSERT INTO t_buku VALUES (null, '$foto', '$judul', '$penulis', '$penerbit', '$tahunterbit', '$kategori')";
 
   mysqli_query($conn, $query);
 
@@ -196,7 +196,7 @@ function registrasi($data)
   // insert ke tabel user
   $query = "INSERT INTO user
               VALUES
-            ('null', '$username', '$password_baru')
+            (null, '$username', '$password_baru')
             ";
   mysqli_query($conn, $query) or die(mysqli_error($conn));
   return mysqli_affected_rows($conn);

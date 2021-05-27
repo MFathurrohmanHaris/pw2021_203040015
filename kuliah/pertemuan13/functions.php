@@ -6,10 +6,6 @@ https://github.com/MFathurrohmanHaris/pw2021_203040015
 Pertemuan 13 - 16 Mei 2021
 Live Searching & Upload Gambar
 */
-?>
-
-<?php
-
 function koneksi()
 {
   return mysqli_connect('localhost', 'root', '', 'pw_203040015');
