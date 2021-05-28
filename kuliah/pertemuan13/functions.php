@@ -203,7 +203,6 @@ function registrasi($data)
   $username = htmlspecialchars(strtolower($data['username']));
   $password1 = mysqli_real_escape_string($conn, $data['password1']);
   $password2 = mysqli_real_escape_string($conn, $data['password2']);
-
   // jika username / password kosong
   if (empty($username) || empty($password1) || empty($password2)) {
     echo "<script>
@@ -212,7 +211,6 @@ function registrasi($data)
           </script>";
     return false;
   }
-
   // jika username sudah ada
   if (query("SELECT * FROM user WHERE username = '$username'")) {
     echo "<script>
@@ -246,7 +244,7 @@ function registrasi($data)
   // insert ke tabel user
   $query = "INSERT INTO user
               VALUES
-            ('null', '$username', '$password_baru')
+            (null, '$username', '$password_baru')
             ";
   mysqli_query($conn, $query) or die(mysqli_error($conn));
   return mysqli_affected_rows($conn);
